@@ -23,7 +23,6 @@ void Solver::Solve(Grid grid) {
       if (moves[cell].size() == 1) {
         forced_move_available = true;
         grid.SetCell(cell, moves[cell][0]);
-        break;
       }
     }
   } while (forced_move_available);
